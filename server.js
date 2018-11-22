@@ -15,11 +15,11 @@ const io = socketIo(server);
 
 // Heroku and localhost database.
 const db = pgp({
-  host: process.env.DB_HOST || 'localhost',
+  host: '127.17.0.1',
   port: 5432,
-  database: process.env.DB_NAME,
-  user: process.env.DB_USERNAME,
-  password: process.env.DB_PASSWORD,
+  database: 'opentab',
+  user: 'opentab',
+  password: 'opentab',
 });
 
 // bcrypt salt rounds.
